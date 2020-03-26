@@ -9,12 +9,14 @@ exports.config = {
   output: './output',
   helpers: {
     Puppeteer: {
-      url: 'http://localhost',
+      url: 'https://github.com',
       show: true,
-      chrome: {
-        args: ['--ignore-certificate-errors', '--incognito'],
-      },
-    }
+      browser: 'firefox',
+      firefox: {
+         args: [
+         '--ignore-certificate-errors'],
+     }
+    },
   },
   include: {
     I: './steps_file.js'
@@ -29,5 +31,5 @@ exports.config = {
     screenshotOnFail: {
       enabled: true
     }
-  }
+  },
 }
