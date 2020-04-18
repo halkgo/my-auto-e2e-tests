@@ -19,7 +19,13 @@ exports.config = {
   include: {
     I: './steps_file.js'
   },
-  bootstrap: null,
+  bootstrap: './bootstrap.js',
+  teardown: null,
+  hooks: [],
+  plugins: {
+    screenshotOnFail: {
+      enabled: true,
+    },
   mocha: {},
   name: 'my-auto-e2e-tests',
   plugins: {
