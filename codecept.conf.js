@@ -6,17 +6,32 @@ setHeadlessWhen(process.env.HEADLESS);
 
 exports.config = {
   tests: './*_test.js',
+  show: process.env.HEADLESS === 'true',
   output: './output',
   helpers: {
-    Puppeteer: {
-      url: 'http://localhost',
+    Playwright: {
+      browser: process.env.BROWSER || 'chromium',
+      url: `https://www.${process.env.CODECEPT_URL}.ru`,
       show: true,
-      chrome: {
-        args: ['--ignore-certificate-errors', '--incognito'],
+      restart: true,
+      fullPageScreenshots: true,
+      waitForTimeout: 30000,
+      waitForAction: 100,
+      windowSize: '1440 x 768',
+      getPageTimeout: 60000,
+      uniqueScreenshotNames: true,
+      emulate: {
+        ignoreHTTPSErrors: true,
+        acceptDownloads: true,
       },
-    }
+      chromium: {
+        args: ['--disable-dev-shm-usage'],
+        devtools: false,
+      },
+    },
   },
-  include: {
+  
+ include: {
     I: './steps_file.js'
   },
   bootstrap: './bootstrap.js',
@@ -25,7 +40,9 @@ exports.config = {
   plugins: {
     screenshotOnFail: {
       enabled: true,
-    },
+    }
+  },
+
   mocha: {},
   name: 'my-auto-e2e-tests',
   plugins: {
@@ -35,5 +52,5 @@ exports.config = {
     screenshotOnFail: {
       enabled: true
     }
+  },
   }
-}
