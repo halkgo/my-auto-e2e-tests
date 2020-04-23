@@ -1,4 +1,4 @@
-const wysiwygPage = require('./pages/wysiwygPage');
+const wysiwygPage = require('../pages/wysiwygPage');
 
 Feature('wysiwyg');
 

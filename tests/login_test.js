@@ -1,5 +1,5 @@
 
-const loginPage = require('./pages/loginPage');
+const loginPage = require('../pages/loginPage');
 
 Feature('login');
 

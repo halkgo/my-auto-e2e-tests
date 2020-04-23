@@ -1,4 +1,4 @@
-const alertPage = require('./pages/alertPage');
+const alertPage = require('../pages/alertPage');
 
 Feature('alerts');
 

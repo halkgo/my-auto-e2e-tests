@@ -1,4 +1,4 @@
-const hoversPage = require('./pages/hoversPage');
+const hoversPage = require('../pages/hoversPage');
 
 Feature('hovers');
 
