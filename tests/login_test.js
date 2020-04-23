@@ -34,4 +34,5 @@ Scenario('login successful', (I) => {
     I.fillField(loginPage.password, 'SuperSecretPassword!');
     I.click (loginPage.button);
     I.see('You logged into a secure area!');
+    
 });
