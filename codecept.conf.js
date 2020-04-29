@@ -5,13 +5,13 @@ const { setHeadlessWhen } = require('@codeceptjs/configure');
 setHeadlessWhen(process.env.HEADLESS);
 
 exports.config = {
-  tests: './*_test.js',
+  tests: './tests/*_test.js',
   show: process.env.HEADLESS === 'true',
   output: './output',
   helpers: {
     Playwright: {
       browser: process.env.BROWSER || 'chromium',
-      url: `https://www.${process.env.CODECEPT_URL}.ru`,
+      url: 'https://the-internet.herokuapp.com',
       show: true,
       restart: true,
       fullPageScreenshots: true,

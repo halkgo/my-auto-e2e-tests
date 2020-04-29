@@ -37,7 +37,6 @@ Scenario('click for js Promt', (I) => {
 
 Scenario('click for js Promt:Cansel', (I) => {
     I.amOnPage ("https://the-internet.herokuapp.com/javascript_alerts");
-    pause;
     I.amCancellingPopups;
     I.click (alertPage.promt);
     I.cancelPopup;
