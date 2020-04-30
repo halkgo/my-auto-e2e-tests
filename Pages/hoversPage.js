@@ -1,4 +1,4 @@
 module.exports = {
-    icon:{css: '#content  div  div:nth-child(3)'},
-    profile:{css: '#content div div:nth-child(3) div a'},
+    icon:{xpath: '(//*[contains (@class, "figure")])[1]'},
+    profile:{xpath: '//a[@href="/users/1"]'},
 };
