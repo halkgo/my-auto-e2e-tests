@@ -1,0 +1,178 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588836540814' stop='1588836560427'>
+    <name>alerts:</name>
+    <title>alerts:</title>
+    <test-cases>
+        <test-case start='1588836540815' status='passed' stop='1588836545752'>
+            <name>click for js Alert</name>
+            <title>click for js Alert</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588836542487' status='passed' stop='1588836545450'>
+                    <name>I am on page "https://the-internet.herokuapp.com/javascript_alerts"</name>
+                    <title>I am on page "https://the-internet.herokuapp.com/javascript_alerts"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588836545450' status='passed' stop='1588836545451'>
+                    <name>I am accepting popups </name>
+                    <title>I am accepting popups </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588836545451' status='passed' stop='1588836545745'>
+                    <name>I click {"xpath":"//button[@onclick=\"jsAlert()\"]"}</name>
+                    <title>I click {"xpath":"//button[@onclick=\"jsAlert()\"]"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588836545745' status='passed' stop='1588836545746'>
+                    <name>I accept popup </name>
+                    <title>I accept popup </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588836545746' status='passed' stop='1588836545752'>
+                    <name>I see "You successfuly clicked an alert"</name>
+                    <title>I see "You successfuly clicked an alert"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1588836546029' status='passed' stop='1588836549643'>
+            <name>click for js Confirm</name>
+            <title>click for js Confirm</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588836546932' status='passed' stop='1588836549353'>
+                    <name>I am on page "https://the-internet.herokuapp.com/javascript_alerts"</name>
+                    <title>I am on page "https://the-internet.herokuapp.com/javascript_alerts"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588836549353' status='passed' stop='1588836549354'>
+                    <name>I am accepting popups </name>
+                    <title>I am accepting popups </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588836549354' status='passed' stop='1588836549639'>
+                    <name>I click {"xpath":"//button[@onclick=\"jsConfirm()\"]"}</name>
+                    <title>I click {"xpath":"//button[@onclick=\"jsConfirm()\"]"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588836549640' status='passed' stop='1588836549640'>
+                    <name>I accept popup </name>
+                    <title>I accept popup </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588836549640' status='passed' stop='1588836549643'>
+                    <name>I see "You clicked: Ok"</name>
+                    <title>I see "You clicked: Ok"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1588836549862' status='passed' stop='1588836553389'>
+            <name>click for js Confirm</name>
+            <title>click for js Confirm</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588836550887' status='passed' stop='1588836553106'>
+                    <name>I am on page "https://the-internet.herokuapp.com/javascript_alerts"</name>
+                    <title>I am on page "https://the-internet.herokuapp.com/javascript_alerts"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588836553106' status='passed' stop='1588836553384'>
+                    <name>I click {"xpath":"//button[@onclick=\"jsConfirm()\"]"}</name>
+                    <title>I click {"xpath":"//button[@onclick=\"jsConfirm()\"]"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588836553384' status='passed' stop='1588836553389'>
+                    <name>I see "You clicked: Cancel"</name>
+                    <title>I see "You clicked: Cancel"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1588836553587' status='passed' stop='1588836556724'>
+            <name>click for js Promt</name>
+            <title>click for js Promt</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588836554513' status='passed' stop='1588836556451'>
+                    <name>I am on page "https://the-internet.herokuapp.com/javascript_alerts"</name>
+                    <title>I am on page "https://the-internet.herokuapp.com/javascript_alerts"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588836556451' status='passed' stop='1588836556451'>
+                    <name>I am accepting popups </name>
+                    <title>I am accepting popups </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588836556451' status='passed' stop='1588836556719'>
+                    <name>I click {"xpath":"//button[@onclick=\"jsPrompt()\"]"}</name>
+                    <title>I click {"xpath":"//button[@onclick=\"jsPrompt()\"]"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588836556719' status='passed' stop='1588836556719'>
+                    <name>I accept popup </name>
+                    <title>I accept popup </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588836556720' status='passed' stop='1588836556724'>
+                    <name>I see "You entered:"</name>
+                    <title>I see "You entered:"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1588836556908' status='passed' stop='1588836560247'>
+            <name>click for js Promt:Cansel</name>
+            <title>click for js Promt:Cansel</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588836557852' status='passed' stop='1588836559966'>
+                    <name>I am on page "https://the-internet.herokuapp.com/javascript_alerts"</name>
+                    <title>I am on page "https://the-internet.herokuapp.com/javascript_alerts"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588836559967' status='passed' stop='1588836560241'>
+                    <name>I click {"xpath":"//button[@onclick=\"jsPrompt()\"]"}</name>
+                    <title>I click {"xpath":"//button[@onclick=\"jsPrompt()\"]"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588836560241' status='passed' stop='1588836560247'>
+                    <name>I see "You entered: null"</name>
+                    <title>I see "You entered: null"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

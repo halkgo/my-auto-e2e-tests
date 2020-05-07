@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588837138029' stop='1588837146334'>
+    <name>hovers:</name>
+    <title>hovers:</title>
+    <test-cases>
+        <test-case start='1588837138029' status='passed' stop='1588837141116'>
+            <name>move</name>
+            <title>move</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588837138927' status='passed' stop='1588837141000'>
+                    <name>I am on page "https://the-internet.herokuapp.com/hovers"</name>
+                    <title>I am on page "https://the-internet.herokuapp.com/hovers"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837141000' status='passed' stop='1588837141112'>
+                    <name>I move cursor to {"xpath":"(//*[contains (@class, \"figure\")])[1]"}</name>
+                    <title>I move cursor to {"xpath":"(//*[contains (@class, \"figure\")])[1]"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837141112' status='passed' stop='1588837141116'>
+                    <name>I see "name: user1"</name>
+                    <title>I see "name: user1"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1588837141307' status='passed' stop='1588837146157'>
+            <name>view profile</name>
+            <title>view profile</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588837142246' status='passed' stop='1588837145541'>
+                    <name>I am on page "https://the-internet.herokuapp.com/hovers"</name>
+                    <title>I am on page "https://the-internet.herokuapp.com/hovers"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837145541' status='passed' stop='1588837145655'>
+                    <name>I move cursor to {"xpath":"(//*[contains (@class, \"figure\")])[1]"}</name>
+                    <title>I move cursor to {"xpath":"(//*[contains (@class, \"figure\")])[1]"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837145656' status='passed' stop='1588837146148'>
+                    <name>I click {"xpath":"//a[@href=\"/users/1\"]"}</name>
+                    <title>I click {"xpath":"//a[@href=\"/users/1\"]"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837146148' status='passed' stop='1588837146156'>
+                    <name>I wait in url "/users/1", 3</name>
+                    <title>I wait in url "/users/1", 3</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

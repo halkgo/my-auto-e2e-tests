@@ -1,0 +1,153 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588837119225' stop='1588837130592'>
+    <name>checkBoxes:</name>
+    <title>checkBoxes:</title>
+    <test-cases>
+        <test-case start='1588837119225' status='failed' stop='1588837120449'>
+            <name>check checkboxes</name>
+            <title>check checkboxes</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588837120394' status='failed' stop='1588837120448'>
+                    <name>I am on page "/checkboxes"</name>
+                    <title>I am on page "/checkboxes"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='2d8dd894-61d9-4e97-94b6-91743e36ff04-attachment.png' type='image/png' size='27968'/>
+            </attachments>
+            <failure>
+                <message>net::ERR_NAME_NOT_RESOLVED at https://www.undefined.ru/checkboxes while navigating to https://www.undefined.ru/checkboxes</message>
+                <stack-trace>Error: net::ERR_NAME_NOT_RESOLVED at https://www.undefined.ru/checkboxes while navigating to https://www.undefined.ru/checkboxes
+                    at FrameSession._navigate (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/chromium/crPage.js:372:19)
+                    at async FrameTask.raceAgainstFailures (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/frames.js:842:9)
+                    at async Frame.goto (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/frames.js:304:32)
+                    at async Playwright.amOnPage (/Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/helper/Playwright.js:623:5)
+                  -- ASYNC --
+                    at Frame.&lt;anonymous> (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/helper.js:66:23)
+                    at Page.goto (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/page.js:187:33)
+                    at Page.&lt;anonymous> (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/helper.js:87:31)
+                    at Playwright.amOnPage (/Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/helper/Playwright.js:623:21)
+                    at Step.run (/Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/step.js:70:47)
+                    at /Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/actor.js:92:23</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1588837121456' status='passed' stop='1588837125740'>
+            <name>check links</name>
+            <title>check links</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588837122627' status='passed' stop='1588837124592'>
+                    <name>I am on page "https://the-internet.herokuapp.com/"</name>
+                    <title>I am on page "https://the-internet.herokuapp.com/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837124593' status='passed' stop='1588837125022'>
+                    <name>I click "File Download"</name>
+                    <title>I click "File Download"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837125022' status='passed' stop='1588837125032'>
+                    <name>I see "File Downloader", "h3"</name>
+                    <title>I see "File Downloader", "h3"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837125032' status='passed' stop='1588837125034'>
+                    <name>I execute script "window.history.back();"</name>
+                    <title>I execute script "window.history.back();"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837125034' status='passed' stop='1588837125733'>
+                    <name>I click link "File Upload"</name>
+                    <title>I click link "File Upload"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837125733' status='passed' stop='1588837125740'>
+                    <name>I see "File Uploader", "h3"</name>
+                    <title>I see "File Uploader", "h3"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1588837125940' status='failed' stop='1588837126900'>
+            <name>recovery password</name>
+            <title>recovery password</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588837126869' status='failed' stop='1588837126899'>
+                    <name>I am on page "/forgot_password"</name>
+                    <title>I am on page "/forgot_password"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>net::ERR_NAME_NOT_RESOLVED at https://www.undefined.ru/forgot_password while navigating to https://www.undefined.ru/forgot_password</message>
+                <stack-trace>Error: net::ERR_NAME_NOT_RESOLVED at https://www.undefined.ru/forgot_password while navigating to https://www.undefined.ru/forgot_password
+                    at FrameSession._navigate (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/chromium/crPage.js:372:19)
+                    at async FrameTask.raceAgainstFailures (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/frames.js:842:9)
+                    at async Frame.goto (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/frames.js:304:32)
+                    at async Playwright.amOnPage (/Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/helper/Playwright.js:623:5)
+                  -- ASYNC --
+                    at Frame.&lt;anonymous> (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/helper.js:66:23)
+                    at Page.goto (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/page.js:187:33)
+                    at Page.&lt;anonymous> (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/helper.js:87:31)
+                    at Playwright.amOnPage (/Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/helper/Playwright.js:623:21)
+                    at Step.run (/Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/step.js:70:47)
+                    at /Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/actor.js:92:23</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1588837127308' status='passed' stop='1588837130392'>
+            <name>tab navigation</name>
+            <title>tab navigation</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588837128261' status='passed' stop='1588837129880'>
+                    <name>I am on page "http://the-internet.herokuapp.com/windows"</name>
+                    <title>I am on page "http://the-internet.herokuapp.com/windows"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837129881' status='passed' stop='1588837130118'>
+                    <name>I click "Click Here"</name>
+                    <title>I click "Click Here"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837130118' status='passed' stop='1588837130389'>
+                    <name>I switch to next tab </name>
+                    <title>I switch to next tab </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837130389' status='passed' stop='1588837130391'>
+                    <name>I see in title "New Window"</name>
+                    <title>I see in title "New Window"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837130391' status='passed' stop='1588837130392'>
+                    <name>I dont see in title "The Internet"</name>
+                    <title>I dont see in title "The Internet"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

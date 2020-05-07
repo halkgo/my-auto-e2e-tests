@@ -1,0 +1,70 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588837130633' stop='1588837138024'>
+    <name>dropDown:</name>
+    <title>dropDown:</title>
+    <test-cases>
+        <test-case start='1588837130634' status='passed' stop='1588837133724'>
+            <name>Выбираем опцию Option 1</name>
+            <title>Выбираем опцию Option 1</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588837131591' status='passed' stop='1588837133596'>
+                    <name>I am on page "https://the-internet.herokuapp.com/dropdown"</name>
+                    <title>I am on page "https://the-internet.herokuapp.com/dropdown"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837133596' status='passed' stop='1588837133716'>
+                    <name>I select option "#dropdown", "Option 1"</name>
+                    <title>I select option "#dropdown", "Option 1"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837133716' status='passed' stop='1588837133724'>
+                    <name>I wait for value "#dropdown", "1"</name>
+                    <title>I wait for value "#dropdown", "1"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1588837133926' status='failed' stop='1588837137476'>
+            <name>Выбираем опцию Option 2 </name>
+            <title>Выбираем опцию Option 2 </title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588837134933' status='passed' stop='1588837137355'>
+                    <name>I am on page "https://the-internet.herokuapp.com/dropdown"</name>
+                    <title>I am on page "https://the-internet.herokuapp.com/dropdown"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837137356' status='passed' stop='1588837137473'>
+                    <name>I select option "#dropdown", "2"</name>
+                    <title>I select option "#dropdown", "2"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837137473' status='failed' stop='1588837137476'>
+                    <name>I wait for text "Option 2", {"xpath":"//option[@selected]"}</name>
+                    <title>I wait for text "Option 2", {"xpath":"//option[@selected]"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='2e25ddd7-e3bf-4c23-9fd6-b69a212dfa72-attachment.png' type='image/png' size='26946'/>
+            </attachments>
+            <failure>
+                <message>Text "Option 2" was not found on page after NaN sec
+                waiting for function failed: timeout exceeded</message>
+                <stack-trace>Error: Text "Option 2" was not found on page after NaN sec
+                waiting for function failed: timeout exceeded
+                    at /Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/helper/Playwright.js:1860:13</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,174 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588837146346' stop='1588837162128'>
+    <name>login:</name>
+    <title>login:</title>
+    <test-cases>
+        <test-case start='1588837146346' status='failed' stop='1588837147492'>
+            <name>login empty</name>
+            <title>login empty</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588837147465' status='failed' stop='1588837147491'>
+                    <name>I am on page "/login"</name>
+                    <title>I am on page "/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='7a16b1f2-c137-4fcf-a180-65bcf210541d-attachment.png' type='image/png' size='27968'/>
+            </attachments>
+            <failure>
+                <message>net::ERR_NAME_NOT_RESOLVED at https://www.undefined.ru/login while navigating to https://www.undefined.ru/login</message>
+                <stack-trace>Error: net::ERR_NAME_NOT_RESOLVED at https://www.undefined.ru/login while navigating to https://www.undefined.ru/login
+                    at FrameSession._navigate (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/chromium/crPage.js:372:19)
+                    at async FrameTask.raceAgainstFailures (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/frames.js:842:9)
+                    at async Frame.goto (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/frames.js:304:32)
+                    at async Playwright.amOnPage (/Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/helper/Playwright.js:623:5)
+                  -- ASYNC --
+                    at Frame.&lt;anonymous> (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/helper.js:66:23)
+                    at Page.goto (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/page.js:187:33)
+                    at Page.&lt;anonymous> (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/helper.js:87:31)
+                    at Playwright.amOnPage (/Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/helper/Playwright.js:623:21)
+                    at Step.run (/Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/step.js:70:47)
+                    at /Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/actor.js:92:23</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1588837148286' status='passed' stop='1588837152350'>
+            <name>login with incorrect username</name>
+            <title>login with incorrect username</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588837149391' status='passed' stop='1588837151282'>
+                    <name>I am on page "http://the-internet.herokuapp.com/login"</name>
+                    <title>I am on page "http://the-internet.herokuapp.com/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837151282' status='passed' stop='1588837151443'>
+                    <name>I click {"css":"#username"}</name>
+                    <title>I click {"css":"#username"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837151443' status='passed' stop='1588837151568'>
+                    <name>I press key ["CommandOrControl","A"]</name>
+                    <title>I press key ["CommandOrControl","A"]</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837151568' status='passed' stop='1588837151791'>
+                    <name>I fill field {"css":"#username"}, "AAAAA"</name>
+                    <title>I fill field {"css":"#username"}, "AAAAA"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837151791' status='passed' stop='1588837152348'>
+                    <name>I click {"css":".radius"}</name>
+                    <title>I click {"css":".radius"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837152348' status='passed' stop='1588837152350'>
+                    <name>I see "Your username is invalid!"</name>
+                    <title>I see "Your username is invalid!"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1588837152507' status='passed' stop='1588837157047'>
+            <name>login with incorrect password</name>
+            <title>login with incorrect password</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588837153668' status='passed' stop='1588837155833'>
+                    <name>I am on page "http://the-internet.herokuapp.com/login"</name>
+                    <title>I am on page "http://the-internet.herokuapp.com/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837155833' status='passed' stop='1588837156003'>
+                    <name>I click {"css":"#username"}</name>
+                    <title>I click {"css":"#username"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837156003' status='passed' stop='1588837156281'>
+                    <name>I fill field {"css":"#username"}, "tomsmith"</name>
+                    <title>I fill field {"css":"#username"}, "tomsmith"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837156281' status='passed' stop='1588837156482'>
+                    <name>I fill field {"css":"#password"}, "AAAAA"</name>
+                    <title>I fill field {"css":"#password"}, "AAAAA"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837156482' status='passed' stop='1588837157045'>
+                    <name>I click {"css":".radius"}</name>
+                    <title>I click {"css":".radius"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837157045' status='passed' stop='1588837157047'>
+                    <name>I see "Your password is invalid!"</name>
+                    <title>I see "Your password is invalid!"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1588837157304' status='passed' stop='1588837161901'>
+            <name>login successful</name>
+            <title>login successful</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588837158292' status='passed' stop='1588837160434'>
+                    <name>I am on page "http://the-internet.herokuapp.com/login"</name>
+                    <title>I am on page "http://the-internet.herokuapp.com/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837160434' status='passed' stop='1588837160600'>
+                    <name>I click {"css":"#username"}</name>
+                    <title>I click {"css":"#username"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837160600' status='passed' stop='1588837160850'>
+                    <name>I fill field {"css":"#username"}, "tomsmith"</name>
+                    <title>I fill field {"css":"#username"}, "tomsmith"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837160850' status='passed' stop='1588837161300'>
+                    <name>I fill field {"css":"#password"}, "SuperSecretPassword!"</name>
+                    <title>I fill field {"css":"#password"}, "SuperSecretPassword!"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837161300' status='passed' stop='1588837161894'>
+                    <name>I click {"css":".radius"}</name>
+                    <title>I click {"css":".radius"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837161894' status='passed' stop='1588837161901'>
+                    <name>I see "You logged into a secure area!"</name>
+                    <title>I see "You logged into a secure area!"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

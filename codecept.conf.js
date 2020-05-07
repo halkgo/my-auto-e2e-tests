@@ -11,7 +11,7 @@ exports.config = {
   helpers: {
     Playwright: {
       browser: process.env.BROWSER || 'chromium',
-      url: 'https://the-internet.herokuapp.com',
+      url: `https://www.${process.env.CODECEPT_URL}.ru`,
       show: true,
       restart: true,
       fullPageScreenshots: true,
@@ -51,6 +51,11 @@ exports.config = {
     },
     screenshotOnFail: {
       enabled: true
-    }
+    },
+      allure: {
+      enabled: false,
+      outputDir: './allure-results',
+      }
   },
+
   }

@@ -1,0 +1,56 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588837166151' stop='1588837235361'>
+    <name>wysiwyg:</name>
+    <title>wysiwyg:</title>
+    <test-cases>
+        <test-case start='1588837166152' status='failed' stop='1588837235244'>
+            <name>test something</name>
+            <title>test something</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588837167742' status='passed' stop='1588837169568'>
+                    <name>I am on page "http://the-internet.herokuapp.com/"</name>
+                    <title>I am on page "http://the-internet.herokuapp.com/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837169569' status='passed' stop='1588837170392'>
+                    <name>I click "WYSIWYG Editor"</name>
+                    <title>I click "WYSIWYG Editor"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837170392' status='passed' stop='1588837170563'>
+                    <name>I switch to {"css":"#mce_0_ifr"}</name>
+                    <title>I switch to {"css":"#mce_0_ifr"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588837170563' status='failed' stop='1588837235243'>
+                    <name>I click {"css":"#tinymce"}</name>
+                    <title>I click {"css":"#tinymce"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.</message>
+                <stack-trace>Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+                    at CRSession.send (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/chromium/crConnection.js:120:19)
+                    at CRSession.&lt;anonymous> (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/helper.js:87:31)
+                    at CRExecutionContext.evaluate (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/chromium/crExecutionContext.js:70:83)
+                    at async FrameManager.waitForNavigationsCreatedBy (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/frames.js:79:28)
+                    at async FrameExecutionContext._doEvaluateInternal (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/dom.js:38:16)
+                    at async Selectors._queryAll (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/selectors.js:95:29)
+                    at async Playwright.proceedClick (/Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/helper/Playwright.js:2049:15)
+                  -- ASYNC --
+                    at Frame.&lt;anonymous> (/Users/natilll/my-auto-e2e-tests/node_modules/playwright-core/lib/helper.js:66:23)
+                    at Playwright.findElements (/Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/helper/Playwright.js:2037:20)
+                    at Playwright.findClickable (/Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/helper/Playwright.js:2066:47)
+                    at Playwright.proceedClick (/Users/natilll/my-auto-e2e-tests/node_modules/codeceptjs/lib/helper/Playwright.js:2049:35)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
