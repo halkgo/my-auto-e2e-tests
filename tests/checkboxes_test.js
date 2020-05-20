@@ -18,11 +18,10 @@ Scenario('check links', () => {
     I.amOnPage ("https://the-internet.herokuapp.com/");
     I.click('File Download');
     I.see('File Downloader','h3');
-    I.executeScript("window.history.back();");
-    I.clickLink('File Upload');
+    I.goBack();
+    I.click('File Upload');
     I.see('File Uploader','h3');
 });
-
 
 Scenario('recovery password', () => {
     I.amOnPage (passwordPage.url);

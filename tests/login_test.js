@@ -4,7 +4,7 @@ const loginPage = require('../pages/loginPage');
 Feature('login');
 
 Scenario('login empty', (I) => {
-    I.amOnPage (loginPage.url);
+    I.amOnPage ("http://the-internet.herokuapp.com/login");
     I.click (loginPage.button);
     I.see('Your username is invalid!');
 });
