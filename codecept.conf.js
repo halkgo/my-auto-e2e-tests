@@ -11,7 +11,7 @@ exports.config = {
   helpers: {
     Playwright: {
       browser: process.env.BROWSER || 'chromium',
-      url: `https://www.${process.env.CODECEPT_URL}.ru`,
+      url: 'https://the-internet.herokuapp.com',
       show: true,
       restart: true,
       fullPageScreenshots: true,

@@ -12,7 +12,7 @@ Scenario('view profile', (I) => {
     I.amOnPage ("https://the-internet.herokuapp.com/hovers");
     I.moveCursorTo(hoversPage.icon);
     I.click(hoversPage.profile);
-    I.waitInUrl('/users/1',3);
+    I.seeInCurrentUrl('/users/1');
 });
 
 

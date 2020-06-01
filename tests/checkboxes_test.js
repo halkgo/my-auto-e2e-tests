@@ -27,7 +27,7 @@ Scenario('recovery password', () => {
     I.amOnPage (passwordPage.url);
     I.fillField(passwordPage.email,'test1@yiopmail.com');
     I.click(passwordPage.retrievePassword);
-    I.waitInUrl('email_sent',3);
+    I.seeInCurrentUrl('email_sent',2);
 });
 
 Scenario('tab navigation', () => {
