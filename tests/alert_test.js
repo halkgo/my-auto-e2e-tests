@@ -18,7 +18,7 @@ Scenario('click for js Confirm', (I) => {
     I.see('You clicked: Ok');
 });
 
-Scenario('click for js Confirm', (I) => {
+Scenario.skip('click for js Confirm', (I) => {
     I.amOnPage ("https://the-internet.herokuapp.com/javascript_alerts");
     I.amCancellingPopups;
     I.click (alertPage.confirm);
@@ -34,13 +34,13 @@ Scenario('click for js Promt', (I) => {
     I.see('You entered:');
 });
 
-
-Scenario('click for js Promt:Cansel', (I) => {
+Scenario.skip('click for js Promt:Cansel', (I) => {
     I.amOnPage ("https://the-internet.herokuapp.com/javascript_alerts");
     I.amCancellingPopups;
     I.click (alertPage.promt);
     I.cancelPopup;
-    I.see('You entered: null');
+    I.see('You entered: null') 
+    
 });
 
 
