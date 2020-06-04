@@ -35,3 +35,13 @@ jobs:
         npm install
     - name: run chromium tests
       run: "./node_modules/.bin/codeceptjs run --steps"
+          
+    - name: Notify slack fail     
+      if: failure()
+env:
+    SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+  uses: voxmedia/github-action-slack-notify-build@v1
+  with:
+    channel_id: D1KGG1B3P
+    status: FAILED
+    color: danger
